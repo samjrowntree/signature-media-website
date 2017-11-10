@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding-top: 80px;
+  font-family: 'Istok Web', sans-serif;
+}
+header {
+  background-color: white;
+  color: #a68d60;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+img.logo {
+ height: 70px;
+}
+img {
+  max-width: 1368px;
+}
+header a {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+  padding: 0px 5px 0px 5px;
+  flex: 1 1 25%;
+}
+header a:hover {
+  text-decoration: underline;
+}
+.slider {
+  min-height: calc(100vh - 80px);
+}
+.aboutUs {
+  padding: 25px 100px;
+}
+h1 {
+  font-family: 'Allura', cursive;
+  font-size: 36px;
+}
+footer {
+  padding: 25px 100px;
+}
+p.subscribe {
+  text-align: center;
+}
+.footersections {
+  display: flex;
+  justify-content: space-between;
+}
+.footersections > div {
+  flex: 1 1 30%;
+}
+
+/*para font : font-family: 'Istok Web', sans-serif;*/
+/*heading font : font-family: 'Allura', cursive;*/

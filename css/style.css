@@ -1,0 +1,353 @@
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #272727;
+}
+
+.spacer {
+  height: 30px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 39px;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* NAV */
+
+nav {
+  background: rgba(255, 255, 255, 0.7);
+  color: #a68d60;
+  height: 80px;
+  /*line-height: 39px;*/
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  z-index: 123456787654;
+}
+
+img.logo {
+  height: 70px;
+  vertical-align: middle;
+}
+
+nav a {
+  /*font-family: "Istok Web", sans-serif;*/
+  font-size: 18px;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  padding: 0px 5px 0px 5px;
+  /*flex: 1 1 25%;*/
+  opacity: 1;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+/* DROP DOWN */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #a68d60;
+  height: 40px;
+  display: flex;
+  text-align: center;
+}
+
+ul li {
+  float: left;
+  flex: 1 1 14%;
+}
+
+ul li a {
+  line-height: 80px;
+}
+
+ul ul li {
+  width: 100%;
+}
+
+ul ul li a {
+  line-height: 40px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+li ul {
+  display: none;
+}
+
+li:hover ul {
+  display: block;
+}
+
+ul ul li:hover {
+  background-color: white;
+}
+
+/*OWL CAROUSEL*/
+
+.owl-item {
+  height: 100vh;
+}
+.owl-item img {
+  min-height: 100vh;
+  width: auto;
+}
+.owl-item div {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+.slide1 {
+  overflow: hidden;
+  background-image: url(../content/Antarctica/ANT_1431.jpg);
+}
+
+.slide2 {
+  overflow: hidden;
+  background-image: url(../content/animalKingdom/SR001024.jpg);
+}
+
+.slide3 {
+  overflow: hidden;
+  background-image: url(../content/islandDreams/SC_Paradise9902.3-2.jpg);
+}
+
+.slide4 {
+  overflow: hidden;
+  background-image: url(../content/jeanMichel/McLennan_Cousteau_15_003.jpg);
+}
+
+/* SLIDE HOVER */
+
+.slide-text h1 {
+  margin: 0;
+  display: none;
+}
+
+.slide-text:hover {
+  color: #a68d60;
+  background: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50vh;
+}
+
+.slide-text:hover h1 {
+  display: inline-block;
+}
+
+/* TRENDS */
+
+.trends {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.trend {
+  padding-top: 50px;
+  flex: 0 0 30%;
+}
+
+.trends img {
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+.parallax {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../content/islandDreams/IMG_6467.shoreclub.beach.1.retouch2_R.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.popular {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mostpopular {
+  flex: 1 1 30%;
+  /*display: none;*/
+}
+
+.mostpopular img {
+  max-width: 100%;
+  height: 50vh;
+}
+
+.mostpopular a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display: inline-block;
+}
+
+.animated {
+  animation-duration: 5s;
+}
+
+/* FOOTER */
+
+footer {
+  color: white;
+  background-color: #6e6e6e;
+  height: 60vh;
+  padding: 40px 100px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.contact {
+  text-align: justify;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #a68d60;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  color: white;
+  font-size: 16px;
+  background-color: #6e6e6e;
+  padding: 10px;
+}
+
+input.email {
+  width: 300px;
+  color: white;
+  margin-right: 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+input.submit {
+  width: 125px;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+
+input.submit:hover {
+  color: #6e6e6e;
+  background-color: white;
+}
+
+input.email::placeholder {
+  color: white;
+}
+
+.back-top-top {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  /*background-image: url(content/back-to-top.png);*/
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* MOBILE OPTIMIZATION */
+
+@media (max-width: 1103px) {
+  nav {
+    display: none;
+  }
+  .footersection div {
+    flex: 0 0 100%;
+  }
+  .mobile-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+  .trend {
+    flex: 0 0 100%;
+  }
+  .trend p,
+  h3 {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .owl-item {
+    height: 50vh;
+  }
+  .owl-item img {
+    min-height: 50vh;
+    width: auto;
+  }
+  .owl-item div {
+    height: 50vh;
+    width: 100vw;
+  }
+  .slide-text:hover {
+    padding-top: 20vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .parallax {
+    backgr
+  }
+}
